@@ -11,7 +11,7 @@
   --cyan: #0dcaf0;
   --black: #000;
   box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: white;
 }
 
@@ -26,19 +26,18 @@
 
 /* Spotlight*/
 /* Gallery */
-#gallery .text-gallery {
-  font-family: "Roboto", sans-serif;
-  margin: 1em 0 50px 0;
-}
 #gallery h2 {
   text-align: center;
-  font-weight: lighter;
-  padding: 1em;
+  font-size: 40px;
+  margin: 50px 175px 50px 175px;
 }
 #gallery p {
   text-align: center;
-  font-size: 15px;
-  margin: 0 500px 0 500px;
+  font-size: 22px;
+  margin: 0 400px 175px 400px;
+}
+#gallery p code {
+  background-color: #f2f2f2;
 }
 #gallery .text-gallery .bold-gallery {
   font-weight: bold;
@@ -63,13 +62,45 @@
   height: 300px;
 }
 /* Items Section */
-#headings>.ae-headings{
+/* Headings */
+.ae-headings dt{
+  padding-top: 50px;
+  margin-right: 255px;
+  border-top: 1px solid black;
+}
+.ae-headings dt {
+  display: block;
+  align-content: left;
+  font-size: 24px;
+  margin-left: 300px;
+}
+.ae-headings dd {
+  display: block;
+  text-align: justify;
+  line-height: 35px;
+  align-content: right;
   
+  margin: 0 270px 0 820px;
+  padding: 40px 0 40px 0;
 }
-#headings dt{
-  text-align: left;
-  margin-left: 100px;
+.headings-borderB{
+  border-bottom: 1px solid black;
 }
-#headings dd{
-  text-align: center;
+.ae-headings h1 {
+  font-size: 57px;
+  padding-top: 0;
+  margin-top: 0;
+}
+.ae-headings h2 {
+  font-size: 41px;
+}
+.ae-headings h3 {
+  font-size: 31px;
+}
+.ae-headings h4{
+  font-size: 25px;
+  font-style: italic;
+}
+.ae-headings p{
+  font-size: 22px;
 }
