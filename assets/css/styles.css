@@ -63,15 +63,13 @@
 }
 /* Items Section */
 /* Headings */
-.ae-headings dt{
+.ae-headings dt {
   padding-top: 50px;
   margin-right: 255px;
   border-top: 1px solid black;
-}
-.ae-headings dt {
   display: block;
   align-content: left;
-  font-size: 24px;
+  font-size: 35px;
   margin-left: 300px;
 }
 .ae-headings dd {
@@ -79,11 +77,11 @@
   text-align: justify;
   line-height: 35px;
   align-content: right;
-  
+
   margin: 0 270px 0 820px;
   padding: 40px 0 40px 0;
 }
-.headings-borderB{
+.headings-borderB {
   border-bottom: 1px solid black;
 }
 .ae-headings h1 {
@@ -97,10 +95,121 @@
 .ae-headings h3 {
   font-size: 31px;
 }
-.ae-headings h4{
+.ae-headings h4 {
   font-size: 25px;
   font-style: italic;
 }
-.ae-headings p{
+.ae-headings p {
   font-size: 22px;
+}
+/* Buttons - Actions */
+.ae-buttons button,
+.ae-actions button {
+  border-radius: 1.8rem;
+  margin:1em 1em .8em 0;
+  padding: 1em;
+}
+.ae-buttons button:hover,
+.ae-actions button:hover{
+  background-color: #60d9e9;
+  border-color:  #60d9e9;
+  color:white ;
+  /* border-radius: 1.8rem;
+  margin:1em 1em .8em 0;
+  padding: 1em; */
+}
+.ae-buttons .default,
+.ae-actions .default {
+  width: 10em;
+  font-size: 20px;
+}
+.ae-buttons .fit,
+.ae-actions .fit {
+  padding: 0.7em;
+  width: 11em;
+  font-size: 20px;
+}
+.ae-buttons .fit-s,
+.ae-actions .fit-s {
+  padding: 0.7em;
+  width: 15em;
+  font-size: 16px;
+}
+.ae-buttons .dark,
+.ae-actions .dark {
+  background-color: #000;
+  color: #f2f2f2;
+}
+.ae-buttons .light,
+.ae-actions .light {
+  background-color: white;
+  border-color: #c0c0c0;
+  color: #000;
+}
+.ae-buttons .light-blue {
+  background-color: white;
+  border-color: #c0c0c0 #60d9e9 #60d9e9 #60d9e9;
+  color: #60d9e9;
+}
+.ae-buttons .gray {
+  background-color: #c0c0c0;
+  border-color: #c0c0c0;
+  color: #f2f2f2;
+}
+.ae-buttons .light-gray {
+  background-color: white;
+  border-color: #c0c0c0;
+  color: #c0c0c0;
+}
+.ae-buttons dt,
+.ae-actions dt {
+  padding-top: 50px;
+  margin-right: 255px;
+  border-top: 1px solid black;
+  display: block;
+  align-content: left;
+  font-size: 35px;
+  margin-left: 300px;
+}
+.ae-buttons dd,
+.ae-actions dd {
+  display: block;
+  text-align: justify;
+  line-height: 35px;
+  align-content: right;
+  margin: -40px 270px 0 820px;
+  padding: 40px 0 40px 0;
+}
+.ae-actions dd{
+  padding-top: 0;
+}
+.ae-buttons .noPadding,
+.ae-actions .noPadding{
+padding-top: 0;
+}
+.ae-buttons .large {
+  width: 10em;
+  font-size: 20px;
+}
+.ae-buttons .small,
+.ae-actions .small {
+  width: 8em;
+  font-size: 13px;
+  margin-top: 0.6em;
+}
+.ae-buttons .button-c5:nth-child(1),
+.ae-buttons .button-c5:nth-child(2) {
+  width: 8em;
+  font-size: 20px;
+}
+.ae-actions .button-a3:nth-child(2),
+.ae-actions .button-a3:nth-child(4) {
+  margin: 1em 0 .5em 0;
+}
+
+.ae-actions .button-a4:nth-child(2),
+.ae-actions .button-a4:nth-child(4) {
+  margin: 1em 0 .5em 0;
+  width: 27em;
+  font-size: 20px;
 }
