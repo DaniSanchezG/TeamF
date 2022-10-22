@@ -27,202 +27,273 @@
   box-sizing: inherit;
 }
 
-/* Spotlight*/
-/* Gallery */
-#gallery .text-gallery {
-  font-family: "Roboto", sans-serif;
-  margin: 1em 0 50px 0;
-}
-#gallery h2 {
-  text-align: center;
-  font-weight: lighter;
-  padding: 1em;
-}
-#gallery p {
-  text-align: center;
-  font-size: 15px;
-  margin: 0 500px 0 500px;
-}
-#gallery .text-gallery .bold-gallery {
-  font-weight: bold;
-}
-#gallery a:link {
-  color: #000;
-}
-#gallery a:hover {
-  color: #3c69c3;
-  text-transform: uppercase;
-  outline: none;
-  text-decoration: none;
-}
-#gallery .container-gallery {
-  display: flex;
-  width: 100vw;
-  height: 450px;
-  overflow: hidden;
-}
-#gallery .container-gallery img {
-  width: 540px;
-  height: 300px;
-}
-/* Items Section */
-#headings>.ae-headings{
-  
-}
-#headings dt{
-  text-align: left;
-  margin-left: 100px;
-}
-#headings dd{
-  text-align: center;
-}
-/* Spotlight */
-/* Gallery */
-/* Items Section */
-#items {
-  width: 80%;
-  margin: 0 auto;
-  font-size: 1.3em;
-}
-
-#itemsHeader{
-  width: 90%;
-  margin: 0 auto 2.2em;
-}
-
-#itemsHeader > h2{
-  text-align: center;
-  font-weight: 100;
-  font-size: 2em;
-  margin: 1em 0;
-}
-
-#itemsHeader > p{
-  text-align: center;
-  font-weight: 100;
-  letter-spacing: .1em;
-  line-height: 180%;
-}
-
-#itemsHeader > p > span{
-  font-weight: 300;
-}
-
-#itemsHeader > p > code{
-  background-color: rgb(238, 238, 238);
-}
-
-#itemsHeader > p > a{
-  color: black;
-}
-
-
-#itemsGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 1rem;
-}
-
-.itemsInGrid {
-  border: 0.5px solid #d8d8d8;
-  padding: 1rem;
-  text-align: center;
-}
-
-#itemsGrid > div > i {
-  border: 2px solid #d8d8d8;
-  padding: 0.7em;
-  font-size: 1.5em;
-  border-radius: 100%;
-  margin: 1em 0;
-}
-
-#itemsGrid > div > h3 {
-  font-weight: 100;
-  font-size: 1.5em;
-}
-
-#itemsGrid > div > p {
-  margin-top: 1em;
-  max-width: 15.625em;
-  color: black;
-  font-weight: 100;
-  margin: 1em auto;
-}
-
-.itemsInGridIcon{
-  font-size: 2rem;
-  border: 1px solid #d8d8d8;
-  border-radius: 25%;
-}
-
-.itemsInGridTop{
-  border-top: 0;
-}
-
-.itemsInGridLeft{
-  border-left: 0;
-}
-
-.itemsInGridRight{
-  border-right: 0;
-}
-
-.itemsInGridBottom{
-  border-bottom: 0;
-}
-
-/* footer */
-
-#footer{
+#spotlight > div.spotlight_banner {
   width: 100%;
-  background-color: #504651;
-  height: 15em;
-  padding: 1em 0;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgb(155, 154, 154);
+  background-color: white;
+  margin: 0;
 }
 
-#footerSocialNetworksIcons{
-  text-align: center;
+#spotlight > div.spotlight_banner > div.spotlight_banner_right > img {
+  width: 100%;
+  height: 950px;
+  object-fit: cover;
+}
+#spotlight > div.spotlight_banner > div.spotlight_banner_right {
+  width: 51%;
+  border-collapse: collapse;
+}
+#spotlight > div.spotlight_banner > div.spotlight_banner_left {
+  width: 46%;
+  text-align: left;
+  margin: 9% 4% 4% 4%;
+  padding-left: 1em;
+  font-size: 1.4em;
+}
+#spotlight
+  > div.spotlight_banner
+  > div.spotlight_banner_left
+  > h1
+  > span.icono {
+  font-size: 2.5em;
+}
+#spotlight > div.spotlight_banner > div.spotlight_banner_left > h1 > span.code {
+  font-family: sans-serif;
+  color: #e62f41;
+  font-style: oblique;
+  font-size: 2.5em;
+  font: larger;
+}
+#spotlight > div.spotlight_banner > div.spotlight_banner_left > h1 > span.team {
+  font-size: 2.5em;
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+  color: rgb(22, 22, 22);
+  font-style: oblique;
+}
+#spotlight > div.spotlight_banner > div.spotlight_banner_left > h1 {
+  letter-spacing: -0.2em;
+}
+#spotlight > div.spotlight_banner > div.spotlight_banner_left > p.parrafo1 {
+  font-size: 1.3em;
+  color: rgb(155, 154, 154);
+  line-height: 1.5em;
+}
+#spotlight
+  > div.spotlight_banner
+  > div.spotlight_banner_left
+  > p.parrafo1
+  > span.underline {
+  text-decoration: underline 5px rgb(96, 95, 95);
 }
 
-#footerSocialNetworksIcons > a{
-  color: white;
-  font-size: 1.2em;
-  padding: 0.8em;
-  line-height: 8em;
-  margin: 1px solid transparent;
-  background-color: #7aa194;
-  margin: 0.5em;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+#spotlight > div.spotlight_banner > div.spotlight_banner_left > p.parrafo2 {
+  font-size: 1.5rem;
+  color: rgb(155, 154, 154);
+  line-height: 1.6em;
+}
+#spotlight
+  > div.spotlight_banner
+  > div.spotlight_banner_left
+  > p.parrafo2
+  > span.stronger {
+  color: #000;
+  font: bolder;
+}
+#spotlight
+  > div.spotlight_banner
+  > div.spotlight_banner_left
+  > p.parrafo2
+  > span.code {
+  background-color: rgb(243, 243, 243);
+  padding: 0.3em;
+}
+#spotlight
+  > div.spotlight_banner
+  > div.spotlight_banner_left
+  > p.parrafo2
+  > span.underline {
+  text-decoration: underline 5px rgb(96, 95, 95);
+}
+#spotlight > div.spotlight_banner > div.spotlight_banner_left > button {
+  width: 14em;
+  height: 3.5em;
+  font-size: 1em;
+  background-color: white;
+  border-radius: 6em;
+  color: rgb(65, 65, 65);
+  border: 1px solid rgb(77, 77, 76);
+  margin-top: 6%;
 }
 
-#footer > #footerText {
-  text-align: center;
-  color: white;
-  font-size: 1.2em;
-  font-weight: 300;
+#spotlight > div.spotlight_1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  background-color: white;
+  margin: 0;
+}
+#spotlight > div.spotlight_1 > div.spotlight1_left > img {
+  width: 100%;
+}
+#spotlight > div.spotlight_1 > div.spotlight1_left {
+  width: 35%;
+}
+#spotlight > div.spotlight_1 > div.spotlight1_right {
+  width: 65%;
+  text-align: left;
+  margin: 4% 4% 4%;
+
+  padding-left: 2em;
+
+  font-size: 1.4em;
+}
+#spotlight > div.spotlight_1 > div.spotlight1_right > h1.header {
+  font-size: 2.2em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  color: rgb(22, 22, 22);
+}
+#spotlight > div.spotlight_1 > div.spotlight1_right > p {
+  color: rgb(155, 154, 154);
+  line-height: 0.9em;
+}
+#spotlight > div.spotlight_1 > div.spotlight1_right > p > span.stronger {
+  color: #000;
+  font: bolder;
+}
+#spotlight > div.spotlight_1 > div.spotlight1_right > p > span.underline {
+  text-decoration: underline 5px rgb(96, 95, 95);
+}
+#spotlight > div.spotlight_1 > div.spotlight1_right > p > span.code {
+  background-color: rgb(243, 243, 243);
+  padding: 0.3em;
+}
+#spotlight > div.spotlight_1 > div.spotlight1_right > button {
+  width: 15em;
+  height: 4.3em;
+  font-size: 0.6em;
+  background-color: white;
+  border-radius: 6em;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(77, 77, 76);
+
+  font-weight: 400;
 }
 
-#footer > #footerText > a{
-  color: white;
-  font-weight: 300;
-  color: #7aa194;
+#spotlight > div.spotlight_2 {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
 }
 
-#footerText > p > span {
-  color: red;
+#spotlight > div.spotlight_2 > div.spotlight2_left {
+  width: 65%;
+  text-align: left;
+  margin: 4% 4% 4%;
+
+  padding-left: 2em;
+
+  font-size: 1.4em;
+}
+#spotlight > div.spotlight_2 > div.spotlight2_right > img {
+  width: 100%;
+  height: 455px;
+}
+#spotlight > div.spotlight_2 > div.spotlight2_right {
+  width: 35%;
+}
+#spotlight > div.spotlight_2 > div.spotlight2_left > h1.header {
+  font-size: 2.2em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  color: rgb(22, 22, 22);
+}
+#spotlight > div.spotlight_2 > div.spotlight2_left > p {
+  color: rgb(155, 154, 154);
+  line-height: 0.9em;
+}
+#spotlight > div.spotlight_2 > div.spotlight2_left > p > span.stronger {
+  color: #000;
+  font: bolder;
+}
+#spotlight > div.spotlight_2 > div.spotlight2_left > p > span.underline {
+  text-decoration: underline 5px rgb(96, 95, 95);
+}
+#spotlight > div.spotlight_2 > div.spotlight2_left > p > span.code {
+  background-color: rgb(243, 243, 243);
+  padding: 0.3em;
+}
+#spotlight > div.spotlight_2 > div.spotlight2_left > button {
+  width: 15em;
+  height: 4.3em;
+  font-size: 0.6em;
+  background-color: white;
+  border-radius: 6em;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(77, 77, 76);
+
+  font-weight: 400;
 }
 
-#footerSocialNetworksIcons > a:nth-child(3){
-  padding: 0.8em 1.1em;
-}
+#spotlight > div.spotlight_3 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 
-#footerSocialNetworksIcons > a:nth-child(2){
-  padding: 0.8em 1em;
+  background-color: white;
+  margin: 0;
 }
+#spotlight > div.spotlight_3 > div.spotlight3_left > img {
+  width: 100%;
+  height: 455px;
+}
+#spotlight > div.spotlight_3 > div.spotlight3_left {
+  width: 35%;
+}
+#spotlight > div.spotlight_3 > div.spotlight3_right {
+  width: 65%;
+  text-align: left;
+  margin: 4% 4% 4%;
 
-#footerSocialNetworksIcons > a:nth-child(4){
-  padding: 0.8em 1em;
+  padding-left: 2em;
+
+  font-size: 1.4em;
+}
+#spotlight > div.spotlight_3 > div.spotlight3_right > h1.header {
+  font-size: 2.2em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  color: rgb(22, 22, 22);
+}
+#spotlight > div.spotlight_3 > div.spotlight3_right > p {
+  color: rgb(155, 154, 154);
+  line-height: 0.9em;
+}
+#spotlight > div.spotlight_3 > div.spotlight3_right > p > span.stronger {
+  color: #000;
+  font: bolder;
+}
+#spotlight > div.spotlight_3 > div.spotlight3_right > p > span.underline {
+  text-decoration: underline 5px rgb(96, 95, 95);
+}
+#spotlight > div.spotlight_3 > div.spotlight3_right > p > span.code {
+  background-color: rgb(243, 243, 243);
+  padding: 0.3em;
+}
+#spotlight > div.spotlight_3 > div.spotlight3_right > button {
+  width: 15em;
+  height: 4.3em;
+  font-size: 0.6em;
+  background-color: white;
+  border-radius: 6em;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(77, 77, 76);
+
+  font-weight: 400;
 }
