@@ -885,6 +885,49 @@ code{
   margin-bottom: 5em;
 }
 
+.iconTitle{
+  font-size: 0.7em;
+  line-height: 150%;
+  font-weight: 300;
+}
+
+.iconContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin: 2em 0;
+  max-width: 1em;
+}
+
+.iconContainer i{
+  margin-right: 1em;
+}
+
+#iconSecondStyle{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin: 2em 0;
+  max-width: 1em;
+}
+
+#iconSecondStyle i{
+  margin-right: .6em;
+  border: 1px solid #d6d6d6;
+  border-radius: 50%;
+  padding: .5em;
+}
+
+#iconSecondStyle > i.fa-brands.fa-instagram{
+  padding-left: 0.6em !important;
+  padding-right: 0.6em !important;
+}
+
+#iconSecondStyle > i.fa-brands.fa-facebook-f{
+    padding-left: 0.75em !important;
+    padding-right: 0.75em !important;
+}
+
 /* Buttons section */
 
 #buttons{
@@ -903,6 +946,116 @@ code{
   margin-right: 18%;
   margin-bottom: 5em;
 }
+
+.buttonsGroup{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.buttonsGroup > button{
+  margin-right: 1em;
+  margin-bottom: 2em;
+  width: 10em;
+  height: 3.5em;
+  font-size: .6em;
+  background-color: white;
+  border-radius: 6em;
+  color: rgb(65, 65, 65);
+  border: 1px solid rgb(77, 77, 76);
+  padding: 1em !important;
+}
+
+#buttonsContainer > div.aditionalRight > div:nth-child(1) > button:nth-child(1){
+  background-color: #0c0c0c;
+  color: white;
+}
+
+#buttonsContainer > div.aditionalRight > div:nth-child(1) > button:nth-child(2){
+  background-color: white;
+  color: rgb(65, 65, 65);
+  border: 1px solid #cccccc;
+}
+
+#buttonsContainer > div.aditionalRight > div:nth-child(2) > button:nth-child(1){
+  background-color: #0c0c0c;
+  color: white;
+  height: 4em;
+}
+
+#buttonsContainer > div.aditionalRight > div:nth-child(2) > button:nth-child(2){
+  background-color: white;
+  color: rgb(65, 65, 65);
+  border: 1px solid #cccccc;
+  height: 3.5em;
+}
+
+#buttonsContainer > div.aditionalRight > div:nth-child(2) > button:nth-child(3){
+  background-color: white;
+  color: var(--cyan);
+  height: 2.5em;
+  width: 6em;
+  padding: 0 !important;
+  border-bottom: 1px solid var(--cyan);
+  border-left: 1px solid var(--cyan);
+  border-right: 1px solid var(--cyan);
+  border-top: 1px solid #cccccc;
+}
+
+
+#buttonsContainer > div.aditionalRight > div:nth-child(3) > button:nth-child(1), #buttonsContainer > div.aditionalRight > div:nth-child(3) > button:nth-child(3){
+  background-color: #0c0c0c;
+  color: white;
+}
+
+#buttonsContainer > div.aditionalRight > div:nth-child(3) > button:nth-child(2), #buttonsContainer > div.aditionalRight > div:nth-child(3) > button:nth-child(4){
+  background-color: white;
+  color: rgb(65, 65, 65);
+  border: 1px solid #cccccc;
+}
+
+#buttonsContainer > div.aditionalRight > div:nth-child(4) > button:nth-child(1), #buttonsContainer > div.aditionalRight > div:nth-child(4) > button:nth-child(3){
+  background-color: #0c0c0c;
+  color: white;
+  height: 2.8em;
+  padding: 0 !important;
+}
+
+#buttonsContainer > div.aditionalRight > div:nth-child(4) > button:nth-child(2), #buttonsContainer > div.aditionalRight > div:nth-child(4) > button:nth-child(4){
+  background-color: white;
+  color: rgb(65, 65, 65);
+  border: 1px solid #cccccc;
+  height: 2.8em;
+  padding: 0 !important;
+}
+
+#buttonsContainer > div.aditionalRight > div:nth-child(5) > button:nth-child(1) > i, #buttonsContainer > div.aditionalRight > div:nth-child(5) > button:nth-child(2) > i{
+  margin-right: .5em;
+}
+
+#buttonsContainer > div.aditionalRight > div:nth-child(5) > button:nth-child(1){
+  background-color: #0c0c0c;
+  color: white;
+}
+
+#buttonsContainer > div.aditionalRight > div:nth-child(5) > button:nth-child(2){
+  background-color: white;
+  color: rgb(65, 65, 65);
+  border: 1px solid #cccccc;
+}
+
+#buttonsContainer > div.aditionalRight > div:nth-child(6) > button:nth-child(1){
+  background-color: #c0c0c0;
+  color: white;
+  border: 0;
+}
+
+#buttonsContainer > div.aditionalRight > div:nth-child(6) > button:nth-child(2){
+  background-color: white;
+  color: #cccccc;
+  border: 1px solid #cccccc;
+}
+
 
 /* Actions section */
 
@@ -997,6 +1150,15 @@ code{
   margin-left: 20%;
   margin-right: 18%;
   margin-bottom: 5em;
+}
+
+.aditionalRight > .content {
+  font-size: 0.7em;
+  line-height: 150%;
+  font-weight: 300;
+  padding: 1em;
+  border: 1px solid #d6d6d6;
+  border-radius: 3px;
 }
 
 /* footer */
