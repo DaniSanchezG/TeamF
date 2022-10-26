@@ -322,12 +322,12 @@
   </section>
   <hr>
   <section id="aditionalElements">
-    <article id="text">
+    <article id="text" class="mainContainer">
       <div id="textTittle">
         <h2>Additional Elements</h2>
         <p>Finally, here are some additional items that you may find useful ((and yes, they go well with any look).</p>
       </div>
-      <div id="textContainer">
+      <div id="textContainer" class="secondaryContainer">
         <div class="aditionalLeft">
           <p>Text</p>
         </div>
@@ -341,8 +341,8 @@
         </div>
     </article>
     <hr class="specialHr">
-    <article id="headings">
-      <div id="headingsContainer">
+    <article id="headings" class="mainContainer">
+      <div id="headingsContainer" class="secondaryContainer">
         <div class="aditionalLeft">
           <p>Headings</p>
         </div>
@@ -378,8 +378,8 @@
       </div>
     </article>
     <hr class="specialHr">
-    <article id="unorderedLists">
-      <div id="unorderedListstContainer">
+    <article id="unorderedLists" class="mainContainer">
+      <div id="unorderedListstContainer" class="secondaryContainer">
         <div class="aditionalLeft">
           <p>Unordered List</p>
         </div>
@@ -410,8 +410,8 @@
         </div>
     </article>
     <hr class="specialHr">
-    <article id="orderedLists">
-      <div id="orderedListsContainer">
+    <article id="orderedLists" class="mainContainer">
+      <div id="orderedListsContainer" class="secondaryContainer">
         <div class="aditionalLeft">
           <p>Ordered List</p>
         </div>
@@ -427,8 +427,8 @@
         </div>
     </article>
     <hr class="specialHr">
-    <article id="definitionList">
-      <div id="definitionListContainer">
+    <article id="definitionList" class="mainContainer">
+      <div id="definitionListContainer" class="secondaryContainer">
         <div class="aditionalLeft">
           <p>Definition List</p>
         </div>
@@ -462,8 +462,8 @@
         </div>
     </article>
     <hr class="specialHr">
-    <article id="blockquote">
-      <div id="blockquoteContainer">
+    <article id="blockquote" class="mainContainer">
+      <div id="blockquoteContainer" class="secondaryContainer">
         <div class="aditionalLeft">
           <p>Blockquote</p>
         </div>
@@ -479,8 +479,8 @@
         </div>
     </article>
     <hr class="specialHr">
-    <article id="code">
-      <div id="codeContainer">
+    <article id="code" class="mainContainer">
+      <div id="codeContainer" class="secondaryContainer">
         <div class="aditionalLeft">
           <p>Code</p>
         </div>
@@ -501,8 +501,8 @@
         </div>
     </article>
     <hr class="specialHr">
-    <article id="icons">
-      <div id="iconsContainer">
+    <article id="icons" class="mainContainer">
+      <div id="iconsContainer" class="secondaryContainer">
         <div class="aditionalLeft">
           <p>Icons</p>
         </div>
@@ -528,8 +528,8 @@
             </div>
     </article>
     <hr class="specialHr">
-    <article id="buttons">
-      <div id="buttonsContainer">
+    <article id="buttons" class="mainContainer">
+      <div id="buttonsContainer" class="secondaryContainer">
         <div class="aditionalLeft">
           <p>Buttons</p>
         </div>
@@ -543,17 +543,25 @@
         </div>
     </article>
     <hr class="specialHr">
-    <article id="actions">
-      <div id="actionsContainer">
+    <article id="actions" class="mainContainer">
+      <div id="actionsContainer" class="secondaryContainer">
         <div class="aditionalLeft">
           <p>Actions</p>
         </div>
         <div class="aditionalRight">
+          <span>Default</span>
+          <div class="buttonsGroup actionsGroup"><button>DEFAULT</button><button>DEFAULT</button></div>
+          <span>Small</span>
+          <div class="buttonsGroup actionsGroup"><button>SMALL</button><button>SMALL</button></div>
+          <span>Stacked</span>
+          <div class="buttonsGroup actionsGroup"><button>DEFAULT</button><button>DEFAULT</button></div>
+          <span>Staked + Fit</span>
+          <div class="buttonsGroup actionsGroup"><button>DEFAULT</button><button>DEFAULT</button></div>
         </div>
     </article>
     <hr class="specialHr">
-    <article id="form">
-      <div id="formContainer">
+    <article id="form" class="mainContainer">
+      <div id="formContainer" class="secondaryContainer">
         <div class="aditionalLeft">
           <p>Form</p>
         </div>
@@ -561,17 +569,101 @@
         </div>
     </article>
     <hr class="specialHr">
-    <article id="table">
-      <div id="tableContainer">
+    <article id="table" class="mainContainer">
+      <div id="tableContainer" class="secondaryContainer">
         <div class="aditionalLeft">
           <p>Table</p>
         </div>
         <div class="aditionalRight">
+          <span>Default</span>
+          <table class="tableGroup" id="table1">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Item 1</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>29.99</td>
+              </tr>
+              <tr>
+                <td>Item 2</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>19.99</td>
+              </tr>
+              <tr>
+                <td>Item 3</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>29.99</td>
+              </tr>
+              <tr>
+                <td>Item 4</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>19.99</td>
+              </tr>
+              <tr>
+                <td>Item 5</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>29.99</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>100.00</td>
+              </tr>
+            </tbody>
+          </table>
+          <span>Alternate</span>
+          <table class="tableGroup" id="table2">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Item 1</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>29.99</td>
+              </tr>
+              <tr>
+                <td>Item 2</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>19.99</td>
+              </tr>
+              <tr>
+                <td>Item 3</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>29.99</td>
+              </tr>
+              <tr>
+                <td>Item 4</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>19.99</td>
+              </tr>
+              <tr>
+                <td>Item 5</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>29.99</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>100.00</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
     </article>
     <hr class="specialHr">
-    <article id="images">
-      <div id="imagesContainer">
+    <article id="images" class="mainContainer">
+      <div id="imagesContainer" class="secondaryContainer">
         <div class="aditionalLeft">
           <p>Images</p>
         </div>
@@ -579,8 +671,8 @@
         </div>
     </article>
     <hr class="specialHr">
-    <article id="box">
-      <div id="boxContainer">
+    <article id="box" class="mainContainer">
+      <div id="boxContainer" class="secondaryContainer">
         <div class="aditionalLeft">
           <p>Box</p>
         </div>
