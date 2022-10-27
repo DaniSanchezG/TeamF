@@ -565,8 +565,57 @@
         <div class="aditionalLeft">
           <p>Form</p>
         </div>
-        <div class="aditionalRight">
-        </div>
+        <div class="aditionalRight" id="formSection">
+          <form action="#" method="GET">
+            <div id="formUserMail">
+              <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="">
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="">
+              </div>
+            </div>
+              <label for="categorySelect">Department</label>
+              <div id="formSelect" class="content-select">
+              <select id="formSelectTag" name="categorySelect">
+                <option value="category">-Category-</option>
+                <option value="manufacturing">Manufacturing</option>
+                <option value="shipping">Shipping</option>
+                <option value="administration">Administration</option>
+                <option value="human-resources">Human Resources</option>
+              </select>
+              <i></i>
+            </div>
+            <div id="formRadio">
+                <div>
+                  <input type="radio" class="radio-custom" name="priority" id="lowPriority" value="lowPriority">
+                  <label for="lowPriority" class="radio-custom-label">Low Priority</label>
+                </div>
+                <div>
+                  <input type="radio" class="radio-custom" name="priority" id="normalPriority" value="normalPriority">
+                  <label for="normalPriority" class="radio-custom-label">Normal Priority</label>
+                </div>
+                <div>
+                  <input type="radio" class="radio-custom" name="priority" id="highPriority" value="highPriority">
+                  <label for="highPriority" class="radio-custom-label">High Priority</label>
+                </div>
+            </div>
+            <label for="yourMessage">Message</label>
+            <textarea name="yourMessage" cols="96" rows="10"></textarea>
+            <div id="formCheckbox">
+              <div>
+                <input name="emailMe" type="checkbox" value="emailMe" class="checkbox-custom">
+                <label for="emailMe" class="checkbox-custom-label">Email me a copy of this message</label>
+              </div>
+              <div>
+                <input name="notARobot" type="checkbox" value="notARobot" class="checkbox-custom">
+                <label for="notARobot" class="checkbox-custom-label">I am a human and not a robot</label>
+              </div>
+            </div>
+            <input type="submit" value="SEND MESSAGE" id="formSubmit">
+        </form>
     </article>
     <hr class="specialHr">
     <article id="table" class="mainContainer">

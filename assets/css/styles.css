@@ -951,6 +951,205 @@ div.aditionalRight > span {
   width: 25rem;
 }
 /* Form section */
+#formUserMail, #formRadio, #formCheckbox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#formUserMail > div:nth-child(1), #formUserMail > div:nth-child(2){
+  width: 50%;
+}
+
+
+#formUserMail > div > input[type=text],
+#formUserMail > div > input[type=email]{
+  height: 2.5rem;
+  border: 1px solid #cccccc;
+  border-radius: 7px;
+  margin-top: .3em;
+  margin-bottom: 1.8em;
+  padding: 0 1em;
+}
+
+#formUserMail > div:nth-child(1) > label, #formUserMail > div:nth-child(2) > label{
+  display: block;
+}
+
+#formUserMail > div:nth-child(1) > input, #formUserMail > div:nth-child(2) > input{
+  width: 90%;
+}
+
+#formSelect{
+  margin-top: 1em;
+  margin-bottom: 1.2em;
+  width: 97.5%;
+}
+
+#formSelectTag{
+  width: 97.5%;
+  height: 2.5rem;
+  border: 1px solid #cccccc;
+  border-radius: 7px;
+  background-color: #fff;
+}
+
+#formSelectTag > option{
+  color: #000;
+}
+
+#formSelectTag:active{
+  border: 1px solid var(--cyan);
+}
+
+#formRadio{
+  width: 95%;
+  margin-bottom: 1em;
+}
+
+#formContainer > div.aditionalRight > form > textarea{
+  display: block;
+  margin-bottom: 2rem;
+  margin-top: 1.2rem;
+  padding: 1em;
+  border: 1px solid #cccccc;
+  border-radius: 7px;
+}
+
+/* https://codepen.io/imohkay/pen/abeNYZ */
+
+.checkbox-custom, .radio-custom {
+  opacity: 0;
+  position: absolute;   
+}
+
+.checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before  {
+  content: '';
+  background-color: #fff;
+  border: 1px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  padding: 2px;
+  padding-top: 5px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.radio-custom + .radio-custom-label:before{
+  border-radius: 50%;
+}
+.checkbox-custom + .checkbox-custom-label:before {
+  border-radius: 5px;
+}
+
+.radio-custom:checked + .radio-custom-label:before {
+  content: "\f00c";
+  font-family: 'FontAwesome';
+  font-size: 1rem;
+  color: #FFF;
+  background-color: #000;
+  border: 0;
+}
+
+.checkbox-custom:checked + .checkbox-custom-label:before {
+  content: "\f00c";
+  font-family: 'FontAwesome';
+  font-size: .8rem;
+  background: #000;
+  color: #fff;
+}
+
+.checkbox-custom:focus + .checkbox-custom-label, .radio-custom:focus + .radio-custom-label {
+  outline: 1px solid #ddd;
+}
+
+#formCheckbox > div{
+  width: 50%;
+  margin-left: -.6em;
+}
+
+#formCheckbox > div > input[type=checkbox]{
+  border-radius: 10px;
+  width: 2rem;
+  height: 2rem;
+}
+
+#formCheckbox > div > label{
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  vertical-align: text-top;
+}
+
+#formCheckbox > div:focus{
+  outline: 0;
+}
+
+#formSection label{
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  font-weight: 400;
+}
+
+.content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.content-select{
+	position: relative;
+}
+
+.content-select select{
+	display: inline-block;
+	width: 100%;
+  padding-left: 1em;
+	background: #f0f0f0;
+	color: #7b7b7b;
+	color: #999;;
+  position: relative;
+}
+
+.content-select select:hover{
+	background: #B1E8CD;
+}
+
+.content-select i{
+	position: absolute;
+	right: 40px;
+	top: calc(50% - 13px);
+	width: 10px;
+	height: 10px;
+	display: block;
+	border-left:3px solid #cccccc;
+	border-bottom:3px solid #cccccc;
+	transform: rotate(-45deg); /* Giramos el cuadrado */
+  margin-top: 7px;
+}
+
+#formSubmit{
+  margin-top: 1.2em;
+  width: 12em;
+  height: 3.5em;
+  font-size: .6em;
+  font-weight: 500;
+  background-color: white;
+  border-radius: 6em;
+  color: black;
+  border: 1px solid #ccc;
+  padding: 1em !important;
+}
+
 
 /* Table section */
 .tableGroup {
