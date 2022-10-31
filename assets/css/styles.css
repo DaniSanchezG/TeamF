@@ -89,10 +89,12 @@ code{
 }
 #spotlight > div.spotlight_banner > div.spotlight_banner_right {
   width: 51%;
+  height: 100%;
   border-collapse: collapse;
 }
 #spotlight > div.spotlight_banner > div.spotlight_banner_left {
   width: 46%;
+  height: 100%;
   text-align: left;
   margin: 9% 4% 4% 4%;
   padding-left: 1em;
@@ -368,6 +370,51 @@ code{
 }
 
 /* Gallery */
+#scrollGaleryLeft, #scrollGaleryRight{
+  position: relative;
+  display: inline-block;
+}
+
+
+#scrollGalery{
+  top: 350%;
+  left: 2em;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+  position: absolute;
+}
+
+/* #scrollGaleryLeft #botonPruebaScrollLeft{
+  position: absolute;
+  top: 30%;
+  left: 0;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+  position: fixed;
+}
+
+
+#scrollGaleryRight #botonPruebaScrollRight{
+  position: absolute;
+  top: 30%;
+  left: 95%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+  position: fixed;
+} */
+
 #gallery .text-gallery {
   font-family: "Roboto", sans-serif;
   margin: 1em 0 50px 0;
@@ -405,8 +452,14 @@ code{
   display: flex;
   width: 100vw;
   height: 450px;
-  overflow: hidden;
+  /* overflow: hidden; */
+  overflow-x: scroll;
 }
+
+#gallery .container-gallery::-webkit-scrollbar {
+  display: none;
+}
+
 #gallery .container-gallery img {
   width: 540px;
   height: 300px;
@@ -1204,7 +1257,43 @@ tbody tr:nth-child(even) {
 }
 
 /* Images section */
+#imagesContainer .aditionalRight p{
+  font-size: 0.7em;
+  line-height: 160%;
+  font-weight: 300;
+}
 
+#imagesContainer .aditionalRight h4{
+  font-size: .9em;
+  font-weight: 300;
+  margin-bottom: 1em;
+}
+
+#imagesImage1, #imagesImage2, #imagesImage3{
+margin-bottom: 1em;
+}
+
+#imagesImage1 > img{
+  width: 100%;
+  object-fit: cover;
+}
+#imagesImage2 > img, 
+#imagesImage3 > img{
+  width: 30%;
+  object-fit: cover;
+  display: inline-block;
+}
+
+#imagesImage2 > img{
+  float: left;
+  margin-right: 1em;
+}
+
+#imagesImage3 > img{
+  float: right;
+  margin-left: 1em;
+  margin-bottom: 0;
+}
 /* Box section */
 
 .aditionalRight > .content {
