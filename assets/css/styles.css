@@ -13,7 +13,6 @@
   --cyan: #0dcaf0;
   --black: #000;
   box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
   background-color: white;
   font-family: 'Roboto', sans-serif;
 }
@@ -357,63 +356,40 @@ code{
 }
 
 #spotlight .underline:hover{
-  border-color: var(--blue) !important;
-  color: var(--blue) !important;
-  text-decoration: underline 2px var(--blue) !important;
+  border-color: var(--cyan) !important;
+  color: var(--cyan) !important;
+  text-decoration: none !important;
   cursor: pointer;
 }
 
 .spotlightButton:hover{
-  border-color: var(--blue) !important;
-  color: var(--blue) !important;
+  border-color: var(--cyan) !important;
+  color: var(--cyan) !important;
   cursor: pointer;
 }
 
 /* Gallery */
-#scrollGaleryLeft, #scrollGaleryRight{
-  position: relative;
+#botonPruebaScrollLeft, #botonPruebaScrollRight{
+  position: absolute;
   display: inline-block;
+  margin-top: 1.2em;
+  font-size: 5em;
+  color: white;
+  opacity: 0.3;
+  transition: all 0.3s ease;
 }
 
-
-#scrollGalery{
-  top: 350%;
-  left: 2em;
-  transform: translateY(-50%);
-  border: none;
-  background-color: transparent;
-  color: white;
-  font-size: 2em;
-  cursor: pointer;
-  position: absolute;
+#botonPruebaScrollLeft:hover, #botonPruebaScrollRight:hover{
+  opacity: 1;
 }
 
-/* #scrollGaleryLeft #botonPruebaScrollLeft{
-  position: absolute;
-  top: 30%;
-  left: 0;
-  transform: translateY(-50%);
-  border: none;
-  background-color: transparent;
-  color: white;
-  font-size: 2em;
-  cursor: pointer;
-  position: fixed;
+#botonPruebaScrollLeft{
+  margin-left: .1em;
 }
 
-
-#scrollGaleryRight #botonPruebaScrollRight{
-  position: absolute;
-  top: 30%;
-  left: 95%;
-  transform: translateY(-50%);
-  border: none;
-  background-color: transparent;
-  color: white;
-  font-size: 2em;
-  cursor: pointer;
-  position: fixed;
-} */
+#botonPruebaScrollRight{
+  margin-left: 96vw;
+}
 
 #gallery .text-gallery {
   font-family: "Roboto", sans-serif;
@@ -443,8 +419,7 @@ code{
   color: #000;
 }
 #gallery a:hover {
-  color: #3c69c3;
-  text-transform: uppercase;
+  color: var(--cyan);
   outline: none;
   text-decoration: none;
 }
@@ -452,7 +427,6 @@ code{
   display: flex;
   width: 100vw;
   height: 450px;
-  /* overflow: hidden; */
   overflow-x: scroll;
 }
 
@@ -825,6 +799,11 @@ div.aditionalRight > span {
   margin-right: 1em;
 }
 
+.iconContainer i:hover{
+  color: var(--cyan);
+}
+
+
 #iconSecondStyle{
   display: flex;
   flex-direction: row;
@@ -838,6 +817,11 @@ div.aditionalRight > span {
   border: 1px solid #d6d6d6;
   border-radius: 50%;
   padding: .5em;
+}
+
+
+#iconSecondStyle i:hover{
+  border: 1px solid var(--cyan);
 }
 
 #iconSecondStyle > i.fa-brands.fa-instagram{
@@ -871,27 +855,32 @@ div.aditionalRight > span {
   padding: 1em !important;
 }
 
-#buttonsContainer > div.aditionalRight > div:nth-child(1) > button:nth-child(1){
+.buttonsGroup i {
+  margin-right: .5em;
+}
+
+#buttonsContainer .firstButtonClass{
   background-color: #0c0c0c;
   color: white;
 }
 
-#buttonsContainer > div.aditionalRight > div:nth-child(1) > button:nth-child(2){
+#buttonsContainer .firstButtonClass:hover{
+  background-color: var(--cyan);
+  border: 0;
+  color: white;
+}
+
+#buttonsContainer .secondButtonClass{
   background-color: white;
   color: rgb(65, 65, 65);
   border: 1px solid #cccccc;
 }
 
 #buttonsContainer > div.aditionalRight > div:nth-child(2) > button:nth-child(1){
-  background-color: #0c0c0c;
-  color: white;
   height: 4em;
 }
 
 #buttonsContainer > div.aditionalRight > div:nth-child(2) > button:nth-child(2){
-  background-color: white;
-  color: rgb(65, 65, 65);
-  border: 1px solid #cccccc;
   height: 3.5em;
 }
 
@@ -907,29 +896,12 @@ div.aditionalRight > span {
   border-top: 1px solid #cccccc;
 }
 
-
-#buttonsContainer > div.aditionalRight > div:nth-child(3) > button:nth-child(1), #buttonsContainer > div.aditionalRight > div:nth-child(3) > button:nth-child(3){
-  background-color: #0c0c0c;
-  color: white;
-}
-
-#buttonsContainer > div.aditionalRight > div:nth-child(3) > button:nth-child(2), #buttonsContainer > div.aditionalRight > div:nth-child(3) > button:nth-child(4){
-  background-color: white;
-  color: rgb(65, 65, 65);
-  border: 1px solid #cccccc;
-}
-
 #buttonsContainer > div.aditionalRight > div:nth-child(4) > button:nth-child(1), #buttonsContainer > div.aditionalRight > div:nth-child(4) > button:nth-child(3){
-  background-color: #0c0c0c;
-  color: white;
   height: 2.8em;
   padding: 0 !important;
 }
 
 #buttonsContainer > div.aditionalRight > div:nth-child(4) > button:nth-child(2), #buttonsContainer > div.aditionalRight > div:nth-child(4) > button:nth-child(4){
-  background-color: white;
-  color: rgb(65, 65, 65);
-  border: 1px solid #cccccc;
   height: 2.8em;
   padding: 0 !important;
 }
@@ -938,29 +910,17 @@ div.aditionalRight > span {
   margin-right: .5em;
 }
 
-#buttonsContainer > div.aditionalRight > div:nth-child(5) > button:nth-child(1){
-  background-color: #0c0c0c;
-  color: white;
-}
-
-#buttonsContainer > div.aditionalRight > div:nth-child(5) > button:nth-child(2){
-  background-color: white;
-  color: rgb(65, 65, 65);
-  border: 1px solid #cccccc;
-}
-
-#buttonsContainer > div.aditionalRight > div:nth-child(6) > button:nth-child(1){
+#buttonsContainer > div.aditionalRight > div:nth-child(7) > button:nth-child(1){
   background-color: #c0c0c0;
   color: white;
   border: 0;
 }
 
-#buttonsContainer > div.aditionalRight > div:nth-child(6) > button:nth-child(2){
+#buttonsContainer > div.aditionalRight > div:nth-child(7) > button:nth-child(2){
   background-color: white;
   color: #cccccc;
   border: 1px solid #cccccc;
 }
-
 
 /* Actions section */
 .actionsGroup{
@@ -1048,12 +1008,18 @@ div.aditionalRight > span {
   background-color: #fff;
 }
 
-#formSelectTag > option{
-  color: #000;
-}
-
 #formSelectTag:active{
   border: 1px solid var(--cyan);
+}
+
+#formSelectTag > option{
+  color: white;
+  background-color: var(--blue);
+}
+
+#formSelectTag > option:not(:checked){
+  color: #000;
+  background-color: white;
 }
 
 #formRadio{
@@ -1203,6 +1169,10 @@ div.aditionalRight > span {
   padding: 1em !important;
 }
 
+#formSection input[type=text]:focus, #formSection input[type=email]:focus, #formSection textarea:focus{
+  border: 1px solid var(--cyan) !important;
+}
+
 
 /* Table section */
 .tableGroup {
@@ -1318,6 +1288,12 @@ margin-bottom: 1em;
   text-align: center;
 }
 
+#footerSocialNetworksIcons a:hover{
+  background-color: white;
+  color: var(--cyan);
+}
+
+
 #footerSocialNetworksIcons > a{
   color: white;
   font-size: 1.2em;
@@ -1345,17 +1321,22 @@ margin-bottom: 1em;
 }
 
 #footerText > p > span {
-  color: red;
+  color: var(--red);
+  font-size: 1.5em;
 }
 
-#footerSocialNetworksIcons > a:nth-child(3){
+#footerSocialNetworksIcons > a:nth-child(1), #footerSocialNetworksIcons > a:nth-child(5){
+  padding: 0.8em .9em;
+}
+
+#footerSocialNetworksIcons > a:nth-child(3), #footerSocialNetworksIcons > a:nth-child(2),#footerSocialNetworksIcons > a:nth-child(4) {
   padding: 0.8em 1.1em;
 }
 
-#footerSocialNetworksIcons > a:nth-child(2){
-  padding: 0.8em 1em;
+#footer #codeSpaceLink{
+  color: var(--cyan);
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
 }
 
-#footerSocialNetworksIcons > a:nth-child(4){
-  padding: 0.8em 1em;
-}
